@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>I made a nice fig (FoTD) &vert; Neurodata FOTD</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="I made a nice fig (FoTD)">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://localhost:4000/fotd/thething">
+<meta property="og:site_name" content="Neurodata FOTD">
+<meta property="og:image" content="http://localhost:4000/images/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/fotd/thething">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Neurodata FOTD Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+</head>
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+            <header class="notepad-post-header-simple">
+                <div class="notepad-post-menu-header-simple">
+                    <a class="notepad-blog-logo" href="http://localhost:4000">
+                        <img src="http://localhost:4000/images/neurodata.png" alt="Blog Logo" /><h3 style="display:inline; color:#dfd6c2"> Neurodata's Figure of the Day</h3>
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">Home</a>
+                 </li>
+            
+           <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+                <div class="notepad-post-title-simple row">
+                    <div class="small-12 columns">
+                        <div class="notepad-post-meta-simple">
+                            <h1>I made a nice fig (FoTD)</h1>
+                            <p>by <strong>Neurodata</strong> &#8212;  <strong><time datetime="2016-12-13T00:00:00-05:00">13 Dec 2016</time></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <article class="notepad-post-content post tag-simple">
+            <div><p>Here we select a random half of the synaptome data, different from the half we have been using.</p>
+
+<p>The data are then z-scored and principal components are computed to the 3rd elbow by Z-G.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">require</span><span class="p">(</span><span class="n">meda</span><span class="p">)</span><span class="w">
+</span><span class="n">source</span><span class="p">(</span><span class="s2">"~/neurodata/synaptome-stats/Code/doidt.r"</span><span class="p">)</span><span class="w">
+</span><span class="n">load</span><span class="p">(</span><span class="s1">'~/neurodata/synaptome-stats/Code/cleanDataWithAttributes.RData'</span><span class="p">)</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">### Setting a seed and creating an index vector
+### to select half of the data
+#set.seed(2^10)
+</span><span class="n">set.seed</span><span class="p">(</span><span class="m">317</span><span class="p">)</span><span class="w">
+</span><span class="n">half1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="nf">dim</span><span class="p">(</span><span class="n">data01</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span><span class="nf">dim</span><span class="p">(</span><span class="n">data01</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="o">/</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">half2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">setdiff</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">dim</span><span class="p">(</span><span class="n">data01</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span><span class="n">half1</span><span class="p">)</span><span class="w">
+
+</span><span class="n">feat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data01</span><span class="p">[</span><span class="n">half1</span><span class="p">,]</span><span class="w">
+</span><span class="n">feat2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data01</span><span class="p">[</span><span class="n">half2</span><span class="p">,]</span><span class="w">
+
+</span><span class="c1">#set.seed(2^10)
+</span><span class="n">set.seed</span><span class="p">(</span><span class="m">317</span><span class="p">)</span><span class="w">
+</span><span class="n">ss</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sample</span><span class="p">(</span><span class="nf">dim</span><span class="p">(</span><span class="n">data01</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span><span class="m">1000</span><span class="p">)</span><span class="w">
+</span><span class="n">small</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data01</span><span class="p">[</span><span class="n">ss</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">24</span><span class="p">,</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">]</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">dat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">small</span><span class="w">
+</span><span class="n">zfeat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> 
+  </span><span class="n">dat</span><span class="p">[,</span><span class="w"> </span><span class="n">lapply</span><span class="p">(</span><span class="n">.SD</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="p">,</span><span class="w"> </span><span class="n">center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">scale</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)]</span><span class="w">
+
+</span><span class="n">pr2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">prcomp</span><span class="p">(</span><span class="n">zfeat</span><span class="p">)</span><span class="w">
+</span><span class="n">cur</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rCUR</span><span class="o">::</span><span class="n">CUR</span><span class="p">(</span><span class="n">as.matrix</span><span class="p">(</span><span class="n">zfeat</span><span class="p">),</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="o">@</span><span class="n">C</span><span class="w">
+
+</span><span class="p">(</span><span class="n">elb</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getElbows</span><span class="p">(</span><span class="n">pr2</span><span class="o">$</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">))</span></code></pre></div>
+
+<pre><code>## [1]  3 18 21
+</code></pre>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">X</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">pr2</span><span class="o">$</span><span class="n">x</span><span class="p">[,</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="n">elb</span><span class="p">[</span><span class="m">3</span><span class="p">]]</span><span class="w">
+
+</span><span class="n">out</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">doIDT</span><span class="p">(</span><span class="n">as.matrix</span><span class="p">(</span><span class="n">X</span><span class="p">),</span><span class="w">
+             </span><span class="n">FUN</span><span class="o">=</span><span class="s2">"mclust"</span><span class="p">,</span><span class="w">
+             </span><span class="n">Dmax</span><span class="o">=</span><span class="n">ncol</span><span class="p">(</span><span class="n">X</span><span class="p">),</span><span class="w"> </span><span class="c1">## max dim for clustering
+</span><span class="w">             </span><span class="n">Kmax</span><span class="o">=</span><span class="m">9</span><span class="p">,</span><span class="w">  </span><span class="c1">## max K for clustering 
+</span><span class="w">             </span><span class="n">maxsamp</span><span class="o">=</span><span class="n">nrow</span><span class="p">(</span><span class="n">X</span><span class="p">),</span><span class="w"> </span><span class="c1">## max n for clustering
+</span><span class="w">             </span><span class="n">samp</span><span class="o">=</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="c1"># 1: no sampling, else n/sample sampling
+</span><span class="w">             </span><span class="n">maxdepth</span><span class="o">=</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="c1"># termination, maximum depth for idt
+</span><span class="w">             </span><span class="n">minnum</span><span class="o">=</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="c1"># termination, minimum observations per branch
+</span><span class="w">             </span><span class="n">verbose</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<pre><code>## number of leaves (clusters) =  22
+</code></pre>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">idtlab</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">out</span><span class="o">$</span><span class="n">class</span><span class="w">
+</span><span class="n">pairs</span><span class="p">(</span><span class="n">X</span><span class="p">[,</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span><span class="w"> </span><span class="n">pch</span><span class="o">=</span><span class="m">19</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="n">idtlab</span><span class="p">)</span><span class="w">
+</span><span class="n">title</span><span class="p">(</span><span class="s2">"FOTD 20161212: IDT on Synaptome Data"</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/images/fotd20161212.png" width="768" /></p>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;I made a nice fig (FoTD)&quot;%20http://localhost:4000/fotd/thething%20via%20&#64;"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/fotd/thething"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/fotd/thething"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+ 
+        
+        <div class="cf"></div>
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+         <section>All content copyright <a href="http://localhost:4000/about">Neurodata</a> &copy; 2016 &bull; All rights reserved.</section>
+    </div>
+    <div class="social-icons">
+        
+        
+        
+        
+        
+        <a href="http://github.com/neurodata">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        <a href="http://facebook.com/neurodata.io">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+ 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+		<script src="https://use.fontawesome.com/72eacbfadb.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+ 
+</body>
+</html>

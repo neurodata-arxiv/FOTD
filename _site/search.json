@@ -1,27 +1,11 @@
 [
 	
 		{
-		  "title"      : "ndstore ingest",
-		  "category"   : "tutorials",
-		  "url"        : "http://localhost:4000/tutorials/ndstore-ingest",
-		  "date"       : "2016-12-09 00:00:00 -0500",
-		  "shortdate"  : "December 09, 2016"
-		} ,
-	
-		{
-		  "title"      : "neurostorm + neurostars",
-		  "category"   : "community",
-		  "url"        : "http://localhost:4000/community/neurostars-participation",
-		  "date"       : "2016-12-05 00:00:00 -0500",
-		  "shortdate"  : "December 05, 2016"
-		} ,
-	
-		{
-		  "title"      : "To the cloud!",
-		  "category"   : "publications",
-		  "url"        : "http://localhost:4000/publications/to-the-cloud",
-		  "date"       : "2016-11-05 00:00:00 -0400",
-		  "shortdate"  : "November 05, 2016"
+		  "title"      : "I made a nice fig (FoTD)",
+		  "category"   : "fotd",
+		  "url"        : "http://localhost:4000/fotd/thething",
+		  "date"       : "2016-12-13 00:00:00 -0500",
+		  "shortdate"  : "December 13, 2016"
 		} 
 	
 ]

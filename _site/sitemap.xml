@@ -48,15 +48,7 @@
 
     
     <url>
-        <loc>http://localhost:4000/tutorials/ndstore-ingest</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/community/neurostars-participation</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/publications/to-the-cloud</loc>
+        <loc>http://localhost:4000/fotd/thething</loc>
     </url>
     
 </urlset>
