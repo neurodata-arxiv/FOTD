@@ -1,0 +1,18 @@
+callback([
+
+  {
+    "text": "To the cloud!",
+    "href": "http://localhost:4000/publications/to-the-cloud"
+  } ,
+
+  {
+    "text": "neurostorm + neurostars",
+    "href": "http://localhost:4000/community/neurostars-participation"
+  } ,
+
+  {
+    "text": "ndstore ingest",
+    "href": "http://localhost:4000/tutorials/ndstore-ingest"
+  } 
+
+])

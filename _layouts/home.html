@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+<header class="notepad-site-head">
+    <div class="notepad-site-head-menu">
+        <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logodark }}" alt="Blog Logo" /><h3 style="display:inline"> Neurodata's Figure of the Day</h3></a>
+        <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+</div>
+        <div class="clearfix"></div>
+    </div>
+</header>
+
+
+<main class="notepad-content" role="main">
+
+            {{ content }}
+</main>
+    {% include footer.html %}
+
+{% include scripts.html %}  
+</body>
+</html>
