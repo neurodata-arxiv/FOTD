@@ -3,7 +3,7 @@
 		{
 		  "title"      : "Synaptome component clustering (FoTD)",
 		  "category"   : "fotd",
-		  "url"        : "http://localhost:4000/fotd/pcscatter",
+		  "url"        : "http://fotd.neurodata.io/fotd/pcscatter",
 		  "date"       : "2016-12-13 00:00:00 -0500",
 		  "shortdate"  : "December 13, 2016"
 		} 
