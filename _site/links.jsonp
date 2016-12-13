@@ -1,8 +1,8 @@
 callback([
 
   {
-    "text": "I made a nice fig (FoTD)",
-    "href": "http://localhost:4000/fotd/thething"
+    "text": "Synaptome component clustering (FoTD)",
+    "href": "http://localhost:4000/fotd/pcscatter"
   } 
 
 ])

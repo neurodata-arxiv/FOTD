@@ -1,8 +1,8 @@
 MASTER_DIR=/Users/gkiar/code/ocp/FOTD
 GH_DIR=/Users/gkiar/code/ocp/FOTD-gh
-FILE=thething.md
+FILE=pcscatter.md
 DATE=2016-12-13
-TITLE="I made a nice fig (FoTD)"
+TITLE="Synaptome component clustering (FoTD)"
 
 POST=$(GH_DIR)/_posts/$(DATE)-$(FILE)
 

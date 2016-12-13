@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I made a nice fig (FoTD)"  
+title: "Synaptome component clustering (FoTD)"  
 description: ""
 category: fotd
 modified: 2016-12-13
