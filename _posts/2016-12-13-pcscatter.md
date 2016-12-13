@@ -3,6 +3,7 @@ layout: post
 title: "Synaptome component clustering (FoTD)"  
 description: ""
 category: fotd
+tags: [scatter, pca, synaptome]
 modified: 2016-12-13
 share: true
 ---
