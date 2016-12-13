@@ -1,3 +1,18 @@
+# Figure of the Day: 20161213
+
+First steps with the chessboard dataset have been to extract 
+11-cubes about each detected synapse in teh synapsin1_2 channel.
+
+This data was vectorized into an $n \times d$ matrix where 
+$n \sim 195000$ adn $d = 11^3$.
+
+This matrix was run through meda which output the following:
+
+- [html](https://mrae.github.io/FOTD/Ex10R55_resulVol1_MEDA.html)
+- [Code](code/fotd20161213.r)
+
+
+
 ## Figure of the Day: 20161212
 
 Starting with the synaptome data, transformed to z-scores then performed
