@@ -1,8 +1,8 @@
-MASTER_DIR=/Users/gkiar/code/ocp/FOTD
-GH_DIR=/Users/gkiar/code/ocp/FOTD-gh
-FILE=pcscatter.md
-DATE=2016-12-13
-TITLE="Synaptome component clustering (FoTD)"
+MASTER_DIR=/Users/JLP/neurodata/FOTD
+GH_DIR=/Users/JLP/neurodata/FOTD-gh
+FILE=IDTsynaptome.md
+DATE=2016-12-14
+TITLE="IDT of Synaptome data (FoTD)"
 
 POST=$(GH_DIR)/_posts/$(DATE)-$(FILE)
 
