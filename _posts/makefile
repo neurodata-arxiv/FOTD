@@ -1,8 +1,8 @@
 MASTER_DIR=/Users/JLP/neurodata/FOTD
 GH_DIR=/Users/JLP/neurodata/FOTD-gh
-FILE=IDTsynaptome.md
-DATE=2016-12-14
-TITLE="IDT of Synaptome data (FoTD)"
+FILE=nodeStats.md
+DATE=2016-12-15
+TITLE="Node Stats: IDT of Synaptome data (FoTD)"
 
 POST=$(GH_DIR)/_posts/$(DATE)-$(FILE)
 
