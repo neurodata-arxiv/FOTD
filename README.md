@@ -1,4 +1,19 @@
-# Figure of the Day: 20161213
+# Figure of the Day: 20161214
+
+A reworking of the IDT run from 20161212.  The settings for idt were
+changed for K <= 2. A nice split of the data seems to occur, which I
+think needs some more investigation.
+
+- [Code](code/fotd20161214.Rmd)  
+- [md](md/fotd20161214.md)  
+- [figure_pt1](figures/fotd20161214pairs.png)  
+- [figure_pt2](figures/fotd20161214tree.png)  
+
+
+--------------------------------------------------------------------
+
+
+## Figure of the Day: 20161213
 
 First steps with the chessboard dataset have been to extract 
 11-cubes about each detected synapse in the synapsin1_2 channel.
