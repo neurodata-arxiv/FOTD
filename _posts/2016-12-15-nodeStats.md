@@ -24,7 +24,7 @@ Continuing from yesterday's figure (20161214), for each node in the
 denoising tree we plot the means and correlation matrices. 
 
 
-{% endhighlight %}r
+{% hightlight r %}
 require(meda)
 source("~/neurodata/synaptome-stats/Code/doidt.r")
 load('~/neurodata/synaptome-stats/Code/cleanDataWithAttributes.RData')
@@ -32,7 +32,7 @@ load("~/neurodata/FOTD/code/IDTrun20161214_2.RData")
 {% endhighlight %}
 
 
-{% endhighlight %}r
+{% hightlight r %}
 idtlab <- out$class
 idtall <- out$idtall
 leaves <- which(sapply(idtall, function(x) x$isLeaf))
@@ -53,7 +53,7 @@ ss <- sample(dim(data01)[1],10000)
 {% endhighlight %}
 
 
-{% endhighlight %}r
+{% hightlight r %}
 D1 <- data01[ss, 1:24, with = FALSE]
 
 Y <- lapply(obn, function(x){
@@ -74,7 +74,7 @@ CorM <- lapply(Y, function(x) x$cormat)
 ## Means for each node in the tree
 
 
-{% endhighlight %}r
+{% hightlight r %}
 mycol <- colorpanel(100, "black", "pink")
 me <- lapply(Y, function(x) apply(x$dat, 2, mean))
 me <- Reduce(rbind, me)
@@ -92,7 +92,7 @@ heatmap.2(as.matrix(me),dendrogram='none',
 ## Correlation matrices for each node in the tree.
 
 
-{% endhighlight %}r
+{% hightlight r %}
 par(mfrow = c(4,2))
 N <- lapply(c(1,1,2,5,3,6,4,7),function(x) { 
              corrplot(CorM[[x]], method = "color", is.corr = TRUE)
