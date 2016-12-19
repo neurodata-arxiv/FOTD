@@ -2,22 +2,11 @@
 layout: post
 title: "Node Stats: IDT of Synaptome data (FoTD)"  
 description: ""
-category: fotd
+category: fotw
 modified: 2016-12-15
 share: true
----
-
----
-title: "Figure of the Day: 20161215"
-author: "Jesse Leigh Patsolic"
-output: 
-  html_document:
-    keep_md: true
-  md_document:
-      variant: markdown_github
-      fig_width: 8
-      fig_height: 8
-      fig_retina: 2
+comments: true
+featured: false
 ---
 
 Continuing from yesterday's figure (20161214), for each node in the

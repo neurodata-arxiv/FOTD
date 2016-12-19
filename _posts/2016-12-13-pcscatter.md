@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Synaptome component clustering (FoTD)"  
-description: ""
-category: fotd
-tags: [scatter, pca, synaptome]
+title: FoTD  
+description: "Synaptome component clustering (FoTD)"  
 modified: 2016-12-13
-share: true
+category: fotw
+tags: [fotw, scatter, pca, synaptome]
+comments: true
+featured: true
 ---
 
 Here we select a random half of the synaptome data, different from the half we have been using.
