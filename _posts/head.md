@@ -2,8 +2,11 @@
 layout: post
 title: FoTD  
 description: ""
-category: fotd
 modified: date
+category: fotw
+tags: [fotw]
+comments: true
 share: true
+featured: false
 ---
 
