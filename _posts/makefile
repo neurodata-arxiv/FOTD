@@ -2,7 +2,7 @@ MASTER_DIR=/Users/JLP/neurodata/FOTD
 GH_DIR=/Users/JLP/neurodata/FOTD-gh
 FILE=nodeStats.md
 DATE=2016-12-15
-TITLE="Node Stats: IDT of Synaptome data (FoTD)"
+TITLE="FoTW: Matrix Exploring"
 
 POST=$(GH_DIR)/_posts/$(DATE)-$(FILE)
 
@@ -10,7 +10,7 @@ default:
 	cp $(GH_DIR)/_posts/head.md $(POST);
 	cat $(MASTER_DIR)/md/$(FILE) >> $(POST);
 	sed -i "" '3s/FoTD/$(TITLE)/' $(POST);
-	sed -i "" '6s/date/$(DATE)/' $(POST);
+	sed -i "" '5s/date/$(DATE)/' $(POST);
 	sed -i "" 's/```r/{% highlight r %}/' $(POST);
 	sed -i "" 's/``` r/{% highlight r %}/' $(POST);
 	sed -i "" 's/```/{% endhighlight %}/' ${POST};
